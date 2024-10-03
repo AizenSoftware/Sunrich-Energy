@@ -21,14 +21,14 @@ export default function Component() {
           </h2>
         </div>
         <div className="w-full max-w-4xl mx-auto bg-gradient-to-r from-red-500 to-orange-400 rounded-lg p-6 mt-8 mb-12 text-white">
-          <ul className="space-y-2 text-sm md:text-base text-black font-thin">
+          <ul className="space-y-2 text-base md:text-lg text-black font-medium">
             <li>• Ag-Og elektrik aboneliği işlemleriniz için Elektrik Mühendisliği Hizmeti mi almak istiyorsunuz ?</li>
             <li>• Çatı-Arazi On-Grid Ges (Güneş Enerji Santrali) projeleriniz için danışmanlık hizmeti mi almak istiyorsunuz ?</li>
             <li>• Off-Grid Ges (Güneş Enerji Santrali) projeleriniz için alacağınız ürünleri doğru ve güvenle mi tedarik etmek istiyorsunuz ?</li>
             <li>• Tarımsal sulamanızı Ges (Güneş Enerji Santrali) ile mi sağlamak istiyorsunuz ?</li>
             <li>• Elektrik kumanda panosuna mı ihtiyacınız var ?</li>
           </ul>
-          <h3 className="text-xl md:text-2xl mt-4 text-center text-black font-thin">
+          <h3 className="text-xl md:text-2xl mt-4 text-center text-black font-medium">
             ELEKTRİĞE DAİR TÜM İHTİYAÇLARINIZI KARŞILIYORUZ
           </h3>
         </div>
