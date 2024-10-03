@@ -1,59 +1,62 @@
-import Image from "next/image"
-import { Mail, MapPin, Instagram } from "lucide-react"
+import Image from 'next/image'
+import { Instagram, Mail, MapPin } from 'lucide-react'
 
-export default function LandingPage() {
+export default function Component() {
   return (
-    <div className="relative min-h-screen flex flex-col">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/ss.jpg"
-          alt="Solar panels on a roof with mountains in the background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
-        <div className="absolute inset-0 bg-gray-900 bg-opacity-60" />
-      </div>
-      <div className="relative z-10 flex-grow flex flex-col items-center justify-between p-6 text-gray-100">
-        <header className="w-full max-w-6xl mx-auto flex justify-between items-center">
-          <div className="text-4xl md:text-6xl font-bold text-orange-500" style={{ fontFamily: "'Brush Script MT', cursive" }}>Sunrich Enerji</div>
-          <div className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center">
-          <Image width={120} height={120} objectFit="cover" src="/images/sunrich-image.png" alt="Sunrich Image" />
-          </div>
-        </header>
-        
-        <main className="w-full max-w-5xl mx-auto text-center space-y-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-orange-500 drop-shadow-lg" style={{ fontFamily: "'Brush Script MT', cursive" }}>
+    <div className="relative min-h-screen bg-sky-200">
+      <Image
+        src="/images/bg-image.png"
+        alt="Solar panels on a roof with mountains in the background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 z-0"
+      />
+      <div className="relative z-10 flex flex-col items-center justify-between min-h-screen p-4 md:p-8">
+        <div className="w-full max-w-6xl mx-auto text-center space-y-12">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-red-500 mt-8 font-brittany">
             Enerjinin En İyi Hali
           </h1>
-          
-          <div className="bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 p-8 rounded-lg shadow-lg max-w-4xl mx-auto text-gray-200">
-            <ul className="text-left space-y-2 ">
-              <li>• Elektrik Mühendisliği Hizmeti</li>
-              <li>• Çatı-Arazi On-Grid GES (Güneş Enerji Santrali) projeleri için danışmanlık</li>
-              <li>• Off-Grid GES (Güneş Enerji Santrali) projeleri için ürün tedariki</li>
-              <li>• Tarımsal sulama için GES (Güneş Enerji Santrali) çözümleri</li>
-              <li>• Elektrik kumanda panosu ihtiyaçları</li>
-            </ul>
-            <p className="mt-4 font-semibold text-gray-900">ELEKTRİĞE DAİR TÜM İHTİYAÇLARINIZI KARŞILIYORUZ</p>
+          <h2 className="text-4xl md:text-5xl font-semibold text-orange-500">
+            SUNRICH ENERJİ
+          </h2>
+        </div>
+        <div className="w-full max-w-4xl mx-auto bg-gradient-to-r from-red-500 to-orange-400 rounded-lg p-6 mt-8 mb-12 text-white">
+          <ul className="space-y-2 text-sm md:text-base text-black font-thin">
+            <li>• Ag-Og elektrik aboneliği işlemleriniz için Elektrik Mühendisliği Hizmeti mi almak istiyorsunuz ?</li>
+            <li>• Çatı-Arazi On-Grid Ges (Güneş Enerji Santrali) projeleriniz için danışmanlık hizmeti mi almak istiyorsunuz ?</li>
+            <li>• Off-Grid Ges (Güneş Enerji Santrali) projeleriniz için alacağınız ürünleri doğru ve güvenle mi tedarik etmek istiyorsunuz ?</li>
+            <li>• Tarımsal sulamanızı Ges (Güneş Enerji Santrali) ile mi sağlamak istiyorsunuz ?</li>
+            <li>• Elektrik kumanda panosuna mı ihtiyacınız var ?</li>
+          </ul>
+          <h3 className="text-xl md:text-2xl mt-4 text-center text-black font-thin">
+            ELEKTRİĞE DAİR TÜM İHTİYAÇLARINIZI KARŞILIYORUZ
+          </h3>
+        </div>
+        <div className="w-full max-w-4xl bg-gradient-to-r from-orange-400 to-red-500 mx-auto flex flex-wrap justify-center items-center gap-4 text-red-600 p-2 rounded-xl">
+          <a href="https://www.instagram.com/sunrichenerji/" target='_blank' className="flex items-center gap-2 text-black">
+            <Instagram className="w-8 h-8" />
+            <span>sunrichenerji</span>
+          </a>
+          <a href="mailto:yesilatiye@gmail.com" target='_blank' className="flex items-center gap-2  text-black">
+            <Mail className="w-8 h-8" />
+            <span>yesilatiye@gmail.com</span>
+          </a>
+          <div className="flex items-center gap-2  text-black">
+            <MapPin className="w-8 h-8" />
+            <span>Gürselpaşa Mah. 75291. Sk. Sercanpark2 Sitesi B Blok K:2 D:4 Seyhan/Adana</span>
           </div>
-        </main>
-        
-        <footer className="w-full max-w-6xl mx-auto flex flex-wrap justify-between items-center text-lg text-gray-300 space-y-2">
-          <div className="flex items-center space-x-2">
-            <Instagram size={30} className="text-orange-500" />
-            <span className="text-base md:text-lg ">sunrichenerji</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <Mail size={30} className="text-orange-500" />
-            <span className="text-base md:text-lg">yesilatiye@gmail.com</span>
-          </div>
-          <div className="flex items-center space-x-2">
-            <MapPin size={30} className="text-orange-500" />
-            <span className="text-base md:text-lg">Gürselpaşa Mah. 75291. Sk. Sercanpark2 Sitesi B Blok K:2 D:4 Seyhan/Adana</span>
-          </div>
-        </footer>
+        </div>
+      </div>
+      <div className="absolute top-4 right-4 z-20">
+          <Image  src="/images/sunrich-image.png"
+          alt="Solar panels on a roof with mountains in the background"
+          width={150}
+          height={150}
+          objectFit="cover"
+          className='hidden lg:block'
+        />
       </div>
     </div>
   )
 }
+       
